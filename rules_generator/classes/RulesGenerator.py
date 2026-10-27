@@ -53,7 +53,7 @@ Task:
         queryName = metadata["queryName"]
         descriptionText = metadata["descriptionText"]
         response = self.client.responses.parse(
-            model="gpt-5-mini-2025-08-07",
+            model="gpt-5.6-terra",
             input=[
                 {"role": "system", "content": system_message},
                 {
@@ -172,7 +172,7 @@ Output only the improved description text, no preamble."""
 
         descriptionText = metadata["descriptionText"]
         response = self.client.responses.create(
-            model="gpt-5-mini-2025-08-07",
+            model="gpt-5.6-terra",
             input=[
                 {"role": "system", "content": system_message},
                 {
